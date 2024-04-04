@@ -18,6 +18,7 @@ public class CarController : Controller
     [HttpGet]
     public IEnumerable<Car> Get() => cars;
 
+    //[DisableCors] // You can still disable the GET and POST requests
     [HttpPost]
     public IEnumerable<Car> Post() => cars;
 
